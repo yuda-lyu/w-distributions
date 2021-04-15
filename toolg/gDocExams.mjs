@@ -13,7 +13,7 @@ function main() {
     let pks = getPks()
 
     //cdn
-    let cdn = `<script src="https://cdn.jsdelivr.net/npm/w-w-distributions@${pks.version}/dist/w-w-distributions.umd.js"></script>`
+    let cdn = `<script src="https://cdn.jsdelivr.net/npm/w-distributions@${pks.version}/dist/w-distributions.umd.js"></script>`
 
     //mkdirSync
     if (!fs.existsSync(fdTar)) {
