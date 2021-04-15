@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-tw">
+
+    <head>
+        <meta http-equiv="content-type" content="text/html charset=UTF-8" />
+        <title>WDistributions</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/wsemi/dist/wsemi.umd.js"></script>
+        <script>
+            let log = console.log
+            console.log = function(){
+                log.apply(null, arguments)
+                wsemi.bodyLog.apply(null, arguments)
+            }
+        </script>
+    
+        <script src="./dist/w-distributions.umd.js"></script>
+        
+    </head>
+
+    <body>
+
+        <script>
+
+            let wd = window['w-distributions']
+            // console.log('wd',wd)
+            
+            //因有使用WebAssembly故無法於IE11運行, 這邊就直接用async函數
+            async function test() {
+                let r
+
+                let normal = await wd.Normal(1, 2) //mean=1,std deviation=2
+
+                r = normal.pdf(1)
+                console.log(r)
+                // => 0.19947114020071632
+
+                r = normal.cdf(1)
+                console.log(r)
+                // => 0.5
+
+                r = normal.inv(1)
+                console.log(r)
+                // => Infiniy
+
+                r = normal.mean()
+                console.log(r)
+                // => 1
+
+                r = normal.median()
+                console.log(r)
+                // => 1
+
+                r = normal.variance()
+                console.log(r)
+                // => 4
+
+                let studentt = await wd.Studentt(34) //degrees of freedom=34
+
+                r = studentt.inv(0.95) //one or two sided test p-values=0.95
+                console.log(r)
+                // => 1.6909242551868549
+
+                studentt = await wd.Studentt(4) //degrees of freedom=4
+
+                r = studentt.inv(0.05) //one or two sided test p-values=0.05
+                console.log(r)
+                // => -2.1318467863266504
+
+            }
+            test()
+                .catch((err) => {
+                    console.log(err)
+                })
+    
+        </script>
+    
+    </body>
+
+</html>

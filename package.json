@@ -1,0 +1,36 @@
+{
+  "name": "w-distributions",
+  "version": "1.0.0",
+  "description": "Distributions for Uniform, Normal, Binomial and Studentt, fork from distributions.",
+  "main": "dist/w-distributions.umd.js",
+  "dependencies": {
+    "cephes": "^1.2.0"
+  },
+  "devDependencies": {
+    "w-package-tools": "^1.0.38"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --timeout 60000 --require @babel/register",
+    "tests": "./node_modules/.bin/mocha --parallel --require @babel/register",
+    "deploy": "gh-pages -d docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuda-lyu/w-distributions"
+  },
+  "homepage": "https://yuda-lyu.github.io/w-distributions/w-distributions.html",
+  "keywords": [
+    "lodash",
+    "color",
+    "crypto",
+    "fuzzy",
+    "xss",
+    "xlsx",
+    "tool",
+    "package ",
+    "browser",
+    "developer"
+  ],
+  "author": "yuda-lyu(semisphere)",
+  "license": "MIT"
+}
