@@ -13,7 +13,7 @@ function main() {
     let pks = getPks()
 
     //cdn
-    let cdn = `<script src="https://cdn.jsdelivr.net/npm/w-howler@${pks.version}/dist/w-howler.umd.js"></script>`
+    let cdn = `<script src="https://cdn.jsdelivr.net/npm/w-w-distributions@${pks.version}/dist/w-w-distributions.umd.js"></script>`
 
     //mkdirSync
     if (!fs.existsSync(fdTar)) {
@@ -30,7 +30,7 @@ function main() {
     let c = fs.readFileSync(fn, 'utf8')
 
     //replace
-    let r = `<script src="dist/w-howler.umd.js"></script>`
+    let r = `<script src="dist/w-distributions.umd.js"></script>`
     c = c.replace(r, cdn)
 
     //write

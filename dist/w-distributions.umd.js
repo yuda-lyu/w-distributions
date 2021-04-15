@@ -1,5 +1,5 @@
 /*!
- * w-distributions v1.0.1
+ * w-distributions v1.0.2
  * (c) 2018-2020 yuda-lyu(semisphere)
  * Released under the MIT License.
  */
