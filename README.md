@@ -57,6 +57,8 @@ async function test() {
     console.log(r)
     // => 4
 
+    //compare with: https://stattrek.com/online-calculator/t-distribution.aspx
+
     let studentt = await wd.Studentt(34) //degrees of freedom=34
 
     r = studentt.inv(0.95) //one or two sided test p-values=0.95
@@ -122,6 +124,8 @@ test()
         r = normal.variance()
         console.log(r)
         // => 4
+
+        //compare with: https://stattrek.com/online-calculator/t-distribution.aspx
 
         let studentt = await wd.Studentt(34) //degrees of freedom=34
 
