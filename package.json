@@ -1,6 +1,6 @@
 {
   "name": "w-distributions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Distributions for Uniform, Normal, Binomial and Studentt, fork from distributions.",
   "main": "dist/w-distributions.umd.js",
   "dependencies": {

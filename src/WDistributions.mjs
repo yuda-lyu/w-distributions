@@ -18,7 +18,7 @@ import Studentt from './studentt.mjs'
  *
  * //import wd from './src/WDistributions.mjs'
  * //import wd from './dist/w-distributions.umd.js'
- * //import wd from 'w-distributions.mjs'
+ * //import wd from 'w-distributions'
  *
  * async function test() {
  *     let r
