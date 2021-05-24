@@ -1,17 +1,16 @@
 {
   "name": "w-distributions",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Distributions for Uniform, Normal, Binomial and Studentt, fork from distributions.",
   "main": "dist/w-distributions.umd.js",
   "dependencies": {
     "cephes": "^1.2.0"
   },
   "devDependencies": {
-    "w-package-tools": "^1.0.38"
+    "w-package-tools": "^1.0.56"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --timeout 60000 --require @babel/register",
-    "tests": "./node_modules/.bin/mocha --parallel --require @babel/register",
+    "test": "mocha --parallel --timeout 60000 --experimental-modules --es-module-specifier-resolution=node",
     "deploy": "gh-pages -d docs"
   },
   "repository": {
