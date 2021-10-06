@@ -3,7 +3,6 @@ Distributions for Uniform, Normal, Binomial and Studentt, fork from distribution
 
 ![language](https://img.shields.io/badge/language-JavaScript-orange.svg) 
 [![npm version](http://img.shields.io/npm/v/w-distributions.svg?style=flat)](https://npmjs.org/package/w-distributions) 
-[![Build Status](https://travis-ci.org/yuda-lyu/w-distributions.svg?branch=master)](https://travis-ci.org/yuda-lyu/w-distributions) 
 [![license](https://img.shields.io/npm/l/w-distributions.svg?style=flat)](https://npmjs.org/package/w-distributions) 
 [![gzip file size](http://img.badgesize.io/yuda-lyu/w-distributions/master/dist/w-distributions.umd.js.svg?compression=gzip)](https://github.com/yuda-lyu/w-distributions)
 [![npm download](https://img.shields.io/npm/dt/w-distributions.svg)](https://npmjs.org/package/w-distributions) 
@@ -85,7 +84,7 @@ test()
 
 [Necessary] Add script for w-distributions.
 ```alias
-<script src="https://cdn.jsdelivr.net/npm/w-distributions@1.0.3/dist/w-distributions.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/w-distributions@1.0.4/dist/w-distributions.umd.js"></script>
 ```
 
 #### Example:
