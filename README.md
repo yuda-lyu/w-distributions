@@ -84,7 +84,7 @@ test()
 
 [Necessary] Add script for w-distributions.
 ```alias
-<script src="https://cdn.jsdelivr.net/npm/w-distributions@1.0.4/dist/w-distributions.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/w-distributions@1.0.7/dist/w-distributions.umd.js"></script>
 ```
 
 #### Example:
