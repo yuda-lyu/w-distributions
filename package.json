@@ -1,7 +1,6 @@
 {
   "name": "w-distributions",
-  "version": "1.0.7",
-  "description": "Distributions for Uniform, Normal, Binomial and Studentt, fork from distributions.",
+  "version": "1.0.8",
   "main": "dist/w-distributions.umd.js",
   "dependencies": {
     "cephes": "^1.2.0"
@@ -17,7 +16,6 @@
     "type": "git",
     "url": "https://github.com/yuda-lyu/w-distributions"
   },
-  "homepage": "https://yuda-lyu.github.io/w-distributions/w-distributions.html",
   "keywords": [
     "lodash",
     "color",
